@@ -44,7 +44,7 @@ router.get('/cropView',function (req,res,next) {
 });
 
 router.get('/analysisView',function (req,res,next) {
-    res.render("analysisView.ejs");
+    res.render("analysisView.ejs")
 });
 
 function recommend(hum,temp)

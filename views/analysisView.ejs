@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <style>
         .jumbotron{
-            background-image: url(wheat.jpg);
+            background-image: url(../wheat.jpg);
             border-radius:0px;
             bottom-radius:6px;
             text-align:center;
@@ -25,224 +25,12 @@
 
 
     </style>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['time in weeks', 'whole sale price'],
-          ['1',        1909],
-          ['2',        1915],
-          ['3',         1946],
-          ['4',         1791],
-          ['5',         1751],
-          ['6',         1761],
-          ['7',         1704],
-          ['8',         1790],
-          ['9',         1818],
-          ['10',         1658],
-          ['11',         1671],
-          ['12',        1593]
-        ]);
-
-        var options = { 
-           titleTextStyle: {
-            color: '#206607',
-            fontSize: 16,
-            fontName: 'Arial',
-            bold: true,
-            italic: true
-          },
-          curveType: 'function'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart-1'));
-
-        chart.draw(data, options);
-      }
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-//2
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['time in weeks', 'whole sale price'],
-          ['1',        3347],
-          ['2',        3341],
-          ['3',         3443],
-          ['4',         3420],
-          ['5',         3401],
-          ['6',         3653],
-          ['7',         3738],
-          ['8',         3808],
-          ['9',         4092],
-          ['10',         4097],
-          ['11',         3812],
-          ['12',        3654]
-        ]);
-
-        var options = { 
-           titleTextStyle: {
-            color: '#206607',
-            fontSize: 16,
-            fontName: 'Arial',
-            bold: true,
-            italic: true
-          },
-          curveType: 'function'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart-2'));
-
-        chart.draw(data, options);
-      }
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-//3
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['time in weeks', 'whole sale price'],
-          ['1',        1266],
-          ['2',        1266],
-          ['3',         1271],
-          ['4',         1252],
-          ['5',         1256],
-          ['6',         1300],
-          ['7',         1282],
-          ['8',         1266],
-          ['9',         1288],
-          ['10',        1346],
-          ['11',        1268],
-          ['12',        1308]
-        ]);
-
-        var options = { 
-           titleTextStyle: {
-            color: '#206607',
-            fontSize: 16,
-            fontName: 'Arial',
-            bold: true,
-            italic: true
-          },
-          curveType: 'function'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart-3'));
-
-        chart.draw(data, options);
-      }
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-//4
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['time in weeks', 'whole sale price'],
-          ['1',       5965 ],
-          ['2',        6013],
-          ['3',         5795],
-          ['4',         5592],
-          ['5',         5697],
-          ['6',         5249],
-          ['7',         5263],
-          ['8',         5092],
-          ['9',         4983],
-          ['10',         4916],
-          ['11',         4720],
-          ['12',        4945]
-        ]);
-
-        var options = { 
-           titleTextStyle: {
-            color: '#206607',
-            fontSize: 16,
-            fontName: 'Arial',
-            bold: true,
-            italic: true
-          },
-          curveType: 'function'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart-4'));
-
-        chart.draw(data, options);
-      }
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-//5
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['time in weeks', 'whole sale price'],
-          ['1',       3347],
-          ['2',        3341],
-          ['3',         3443],
-          ['4',         3420],
-          ['5',         3401],
-          ['6',         3653],
-          ['7',         3738],
-          ['8',         3808],
-          ['9',         4002],
-          ['10',        4087],
-          ['11',        3812],
-          ['12',        3654]
-        ]);
-
-        var options = { 
-           titleTextStyle: {
-            color: '#206607',
-            fontSize: 16,
-            fontName: 'Arial',
-            bold: true,
-            italic: true
-          },
-          curveType: 'function'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart-5'));
-
-        chart.draw(data, options);
-      }
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-//6
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['time in weeks', 'whole sale price'],
-          ['1',        1968],
-          ['2',        1972],
-          ['3',        2011],
-          ['4',        2006],
-          ['5',        2047],
-          ['6',         1941],
-          ['7',         1916],
-          ['8',         1979],
-          ['9',         2078],
-          ['10',        2035],
-          ['11',       2040],
-          ['12',       2014]
-        ]);
-
-        var options = { 
-           titleTextStyle: {
-            color: '#206607',
-            fontSize: 16,
-            fontName: 'Arial',
-            bold: true,
-            italic: true
-          },
-          curveType: 'function'
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart-6'));
-
-        chart.draw(data, options);
-      }
-    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
     <a class="navbar-brand" href="#">
-        <img src="a.png" class="img-responsive" style="max-width: 20%">
+        <img src="../a.png" class="img-responsive" style="max-width: 20%">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -264,22 +52,64 @@ crop value graph
 map
 -->
 
-<div class="dropdown" style="padding: 1% 1%">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">select crop
-        <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-        <li><a href="#">crop 1</a></li>
-        <li><a href="#">crop 2</a></li>
-        <li><a href="#">crop 3</a></li>
-        <li><a href="#">crop 4</a></li>
-        <li><a href="#">crop 5</a></li>
-        <li><a href="#">crop 6</a></li>
-    </ul>
-</div>
-<div id="curve_chart-1" style="width: 900px; height: 500px"></div><div id="curve_chart-2" style="width: 900px; height: 500px"></div><div id="curve_chart-3" style="width: 900px; height: 500px"></div><div id="curve_chart-4" style="width: 900px; height: 500px"></div><div id="curve_chart-5" style="width: 900px; height: 500px"></div><div id="curve_chart-6" style="width: 900px; height: 500px"></div>
-<!--graph here-->
 
-<div id="map" class="container" style="width:800px;height:400px; margin-left: 5%; margin-bottom: 10%">
+
+<div id="map" class="container" style="width:800px;height:400px; margin-left: 5%; margin-bottom: 10%"></div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Crop</th>
+            <th scope="col">Best time to sell</th>
+            <th scope="col">Expected percentage returns</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Potato</th>
+            <td>3 weeks from now</td>
+            <td>-8.9</td>
+        </tr>
+        <tr>
+            <th scope="row">Groundnut</th>
+            <td>10 weeks from now</td>
+            <td>3.2</td>
+        </tr>
+        <tr>
+            <th scope="row">Maize</th>
+            <td>10 weeks from now</td>
+            <td>22.3</td>
+        </tr>
+        <tr>
+            <th scope="row">Moong</th>
+            <td>2 weeks from now</td>
+            <td>31.73</td>
+        </tr>
+        <tr>
+            <th scope="row">Onion</th>
+            <td>10 weeks from now</td>
+            <td>10.6</td>
+        </tr>
+        <tr>
+            <th scope="row">Paddy</th>
+            <td>5 weeks from now</td>
+            <td>15.4</td>
+        </tr>
+        </tbody>
+
+    </table>
+<!--graph here-->
+<div class="container" >
+    <img src="../groundnut.jpg" style="width: 550px;height: 400px">
+    <img src="../maize.jpg" style="width: 550px;height: 400px">
+    <img src="../moong.jpg" style="width: 550px;height: 400px">
+    <img src="../onion.jpg" style="width: 550px;height: 400px">
+    <img src="../paddy.jpg" style="width: 550px;height: 400px">
+    <img src="../potato.jpg" style="width: 550px;height: 400px">
+</div>
+
+
 
     <script type="text/javascript">
         function markerCoords(markerobject){
@@ -296,11 +126,34 @@ map
         }
         function myMap() {
             var mapOptions = {
-                center: new google.maps.LatLng(12.9, 79.1),
-                zoom: 10,
+                center: new google.maps.LatLng(12.5, 79.4),
+                zoom: 7,
                 mapTypeId: google.maps.MapTypeId.HYBRID
             }
+            var transport=3000
+            var storage = 4000
+            var distance = 10
+            var title="transport cost:"+(transport).toString()+"\n"+"Storage cost:"+storage.toString()+"\n"+"distance:"+distance.toString()+" km\n"
             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            var marker = new google.maps.Marker({position:{lat:12.8,lng:79},map:map,title:title})
+
+            var transport=3500
+            var storage = 3000
+            var distance = 9
+            var title="transport cost:"+(transport).toString()+"\n"+"Storage cost:"+storage.toString()+"\n"+"distance:"+distance.toString()+" km\n"
+            var marker = new google.maps.Marker({position:{lat:12.5,lng:79.8},map:map,title:title})
+
+            var transport=3400
+            var storage = 4100
+            var distance = 11
+            var title="transport cost:"+(transport).toString()+"\n"+"Storage cost:"+storage.toString()+"\n"+"distance:"+distance.toString()+" km\n"
+            var marker = new google.maps.Marker({position:{lat:13,lng:78.9},map:map,title:title})
+
+            var transport=3600
+            var storage = 4000
+            var distance = 10
+            var title="transport cost:"+(transport).toString()+"\n"+"Storage cost:"+storage.toString()+"\n"+"distance:"+distance.toString()+" km\n"
+            var marker = new google.maps.Marker({position:{lat:12.,lng:79.1},map:map,title:title})
         }</script>
 
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
