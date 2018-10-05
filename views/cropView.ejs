@@ -25,6 +25,39 @@
 
 
     </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['time', 'humidity', 'temperature'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = { 
+           titleTextStyle: {
+            color: '#206607',
+            fontSize: 16,
+            fontName: 'Arial',
+            bold: true,
+            italic: true
+          },
+          title: 'sensor data',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+          colors: ['#0599b7', '#e54202']
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
@@ -37,8 +70,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <a class="btn btn-outline-light pull-right" style="position: absolute;padding: 15px 32px; right: 20%" href="/cropView" role="button"><i class="fab fa-pagelines"></i> P1</a>
-            <a class="btn btn-outline-light pull-right" style="position: absolute;padding: 15px 32px; right: 10%" href="/analysisView" role="button"><i class="fab fa-pagelines"></i> P2</a>
+        <a class="btn btn-outline-light pull-right" style="position: absolute;padding: 15px 32px; right: 20%" href="/cropView" role="button"><i class="fab fa-pagelines"></i> अनाज</a>
+            <a class="btn btn-outline-light pull-right" style="position: absolute;padding: 15px 32px; right: 10%" href="/analysisView" role="button"><i class="fab fa-pagelines"></i> मुनाफा</a>
 
     </div>
 </nav>
@@ -54,8 +87,10 @@
 
 </div>
 <p class="container" style="position: absolute;padding-left: 50% ">
-    ₹1000/acre
+    ₹1000/एकड़
 </p>
+
+<div class="container" id="curve_chart" style="width: 900px; height: 500px; padding-top: 20px"></div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
