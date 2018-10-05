@@ -35,7 +35,10 @@ router.get('/cropView',function (req,res,next) {
             hums.push(humidity);
             temps.push(temperature);
         });
-        res.render("cropView.ejs",{h:hums,t:temps});
+        var crop = recommend(hums[hums.length-1],temps[temps.length-1]);
+        console.log(crop)
+
+        res.render("cropView.ejs",{h:hums,t:temps,c:crop});
     });
 
 });
@@ -43,5 +46,18 @@ router.get('/cropView',function (req,res,next) {
 router.get('/analysisView',function (req,res,next) {
     res.render("analysisView.ejs");
 });
+
+function recommend(hum,temp)
+{
+    temp=Number(temp)
+    console.log(temp)
+    var recs=["मूंगफली","मक्का","धान"]
+
+
+    if (temp<27 && temp>18) return ["मक्का",1919]
+    if (temp<20 && temp>16) return ["धान",1668]
+    if (temp<35 && temp>21) return ["मूंगफली",1521]
+    return ["मक्का",1919]
+}
 
 module.exports = router;
